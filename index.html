@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAA Club - Our Sponsors</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-blue: #1B1B4B;
+            --accent-red: #CC0000;
+        }
+        
+        .club-nav-item:hover {
+            border-bottom: 2px solid var(--accent-red);
+        }
+
+        .sponsor-card {
+            transition: all 0.3s ease;
+        }
+
+        .sponsor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-card:hover {
+            border-color: #CC0000;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            top: -1rem;
+            left: 1rem;
+            color: #CC0000;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-[#1B1B4B] text-white">
+        <!-- Top Bar -->
+        <div class="bg-[#CC0000] py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="text-sm">
+                    Support Your Local Club
+                </div>
+                <div class="flex gap-4">
+                    <a href="#become-sponsor" class="text-sm hover:text-gray-200">Become a Sponsor</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Header -->
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="https://lynchypin.github.io/club-home-page/">
+                        <img src="https://placehold.co/150x60" alt="Club Logo" class="h-15">
+                    </a>
+                </div>
+                
+                <nav class="hidden md:flex gap-6">
+                    <a href="https://lynchypin.github.io/club-home-page/" class="club-nav-item py-2">Home</a>
+                    <a href="https://lynchypin.github.io/club-about-page/" class="club-nav-item py-2">About</a>
+                    <a href="https://lynchypin.github.io/club-teams-page/" class="club-nav-item py-2">Teams</a>
+                    <a href="https://lynchypin.github.io/club-fixtures-page/" class="club-nav-item py-2">Fixtures</a>
+                    <a href="https://lynchypin.github.io/club-news-page/" class="club-nav-item py-2">News</a>
+                    <a href="https://lynchypin.github.io/club-shop-page/" class="club-nav-item py-2">Shop</a>
+                    <a href="https://lynchypin.github.io/club-sponsors-page/" class="club-nav-item py-2">Sponsors</a>
+                    <a href="https://lynchypin.github.io/club-contact-page/" class="club-nav-item py-2">Contact</a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <div class="bg-[#1B1B4B] text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Our Sponsors</h1>
+            <nav class="text-sm" aria-label="Breadcrumb">
+                <ol class="list-none p-0 inline-flex">
+                    <li class="flex items-center">
+                        <a href="https://lynchypin.github.io/club-home-page/">Home</a>
+                        <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
+                        </svg>
+                    </li>
+                    <li>Sponsors</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Principal Sponsor -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Principal Sponsor</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden sponsor-card">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-8 flex items-center justify-center">
+                        <img src="https://placehold.co/400x200" alt="Flannery's Irish Pub" class="max-w-full">
+                    </div>
+                    <div class="p-8 bg-[#1B1B4B] text-white">
+                        <h3 class="text-2xl font-bold mb-4">Flannery's Irish Pub</h3>
+                        <p class="mb-4">Proud principal sponsor since 2020, supporting our club's growth and success.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-[#CC0000]" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Premier local establishment
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-[#CC0000]" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Community cornerstone
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-[#CC0000]" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Dedicated to local sports
+                            </li>
+                        </ul>
+                        <a href="#" class="inline-block bg-[#CC0000] text-white px-6 py-2 rounded-lg hover:bg-red-700">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gold Partners -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Gold Partners</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Gold Sponsor Card -->
+                <div class="bg-white rounded-lg shadow-md p-6 sponsor-card">
+                    <img src="https://placehold.co/300x150" alt="Sponsor" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-center mb-2">Murphy's Construction</h3>
+                    <p class="text-gray-600 text-center mb-4">Building the future together</p>
+                    <div class="text-center">
+                        <a href="#" class="text-[#CC0000] hover:underline">Learn More</a>
+                    </div>
+                </div>
+                <!-- More gold sponsor cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Silver Partners -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Silver Partners</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Silver Sponsor Card -->
+                <div class="bg-white rounded-lg shadow-md p-6 sponsor-card">
+                    <img src="https://placehold.co/200x100" alt="Sponsor" class="mx-auto mb-4">
+                    <h3 class="text-lg font-bold text-center">O'Brien's Pharmacy</h3>
+                </div>
+                <!-- More silver sponsor cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bronze Partners -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Bronze Partners</h2>
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+                <!-- Bronze Sponsor Logo -->
+                <div class="bg-white rounded-lg shadow-md p-4 sponsor-card">
+                    <img src="https://placehold.co/150x75" alt="Sponsor" class="mx-auto">
+                </div>
+                <!-- More bronze sponsor logos -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Benefits -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Sponsorship Benefits</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Benefit Card -->
+                <div class="border-2 border-gray-200 rounded-lg p-6 benefit-card hover:shadow-lg transition-all">
+                    <div class="text-[#CC0000] mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Brand Visibility</h3>
+                    <p class="text-gray-600">
+                        Prominent display of your brand at our facilities and during matches
+                    </p>
+                </div>
+                <!-- More benefit cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">What Our Sponsors Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial Card -->
+                <div class="bg-white rounded-lg shadow-md p-8 relative testimonial-card">
+                    <p class="text-gray-600 mb-4">
+                        "Supporting the club has been a wonderful experience. The exposure and community engagement have been fantastic for our business."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60" alt="Sponsor" class="rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">John Murphy</h4>
+                            <p class="text-gray-500">Murphy's Construction</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- More testimonial cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Sponsor -->
+    <section id="become-sponsor" class="py-12 bg-[#1B1B4B] text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Become a Sponsor</h2>
+                <p class="mb-8">Join our family of sponsors and support local sports while growing your brand</p>
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Company Name" 
+                           class="px-4 py-2 rounded-lg text-black">
+                    <input type="email" placeholder="Email Address" 
+                           class="px-4 py-2 rounded-lg text-black">
+                    <input type="tel" placeholder="Phone Number" 
+                           class="px-4 py-2 rounded-lg text-black">
+                    <select class="px-4 py-2 rounded-lg text-black">
+                        <option>Select Sponsorship Level</option>
+                        <option>Principal Sponsor</option>
+                        <option>Gold Partner</option>
+                        <option>Silver Partner</option>
+                        <option>Bronze Partner</option>
+                    </select>
+                    <textarea placeholder="Message" 
+                              class="px-4 py-2 rounded-lg text-black md:col-span-2" rows="4"></textarea>
+                    <button type="submit" 
+                            class="bg-[#CC0000] px-6 py-3 rounded-lg hover:bg-red-700 md:col-span-2">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Opportunities -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Partnership Opportunities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Partnership Package -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-[#1B1B4B] text-white p-6 text-center">
+                        <h3 class="text-xl font-bold">Gold Package</h3>
+                        <p class="text-3xl font-bold mt-2">€5,000</p>
+                        <p class="text-sm opacity-75">per year</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Jersey sponsorship
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Pitch-side advertising
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Social media promotion
+                            </li>
+                        </ul>
+                        <button class="w-full bg-[#1B1B4B] text-white py-2 rounded-lg mt-6 hover:bg-[#CC0000]">
+                            Select Package
+                        </button>
+                    </div>
+                </div>
+                <!-- More package cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1B1B4B] text-white pt-12 pb-6">
+        <!-- Footer content same as other pages -->
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const mobileMenu = document.querySelector('.md\\:flex');
+            
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
